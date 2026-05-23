@@ -10,7 +10,7 @@ The project simulates a real-world banking fraud analytics workflow followed by 
 
 # 🎯 Business Problem
 
-Financial institutions process millions of digital transactions daily, making fraud detection a critical business challenge. Fraudulent activities lead to:
+Financial institutions process millions of digital transactions daily, making fraud detection a critical business challenges which leads to:
 
 - Financial losses
 - Regulatory risks
@@ -33,14 +33,14 @@ Financial institutions process millions of digital transactions daily, making fr
 
 # 🛠 Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| PostgreSQL | Data storage and SQL analytics |
-| Python | Data analysis and dashboarding |
-| Pandas | Data manipulation |
-| Plotly | Interactive visualizations |
-| Streamlit | Dashboard development |
-| Jupyter Notebook | Exploratory Data Analysis |
+ Technology  Purpose 
+
+ - PostgreSQL = Data storage ,Data Transform & SQL analysis 
+ - Python = Exploratory Data Analysis and dashboarding 
+ - Pandas = Data manipulation 
+ - Plotly = Interactive visualizations 
+ - Streamlit = Dashboard development 
+ - Jupyter Notebook = Exploratory Data Analysis 
 
 ---
 
@@ -66,34 +66,33 @@ Business Insights & Recommendations
 
 # 📊 Key Business KPIs
 
-| KPI | Description |
-|---|---|
-| Fraud Rate | Percentage of fraudulent transactions |
-| Fraud Amount | Total amount lost due to fraud |
-| Fraud Transactions | Total number of fraud transactions |
-| Average Fraud Amount | Average value of fraud transactions |
-| Transaction Velocity | Rapid transaction frequency by user |
-| Fraud by Hour | Fraud occurrence based on transaction timing |
-| Fraud by Location | Geographic fraud concentration |
-| Fraud by Transaction Type | Fraud risk by payment category |
+ KPI   Description 
+
+ - Fraud Rate = Percentage of fraudulent transactions 
+ - Fraud Amount = Total amount lost due to fraud 
+ - Fraud Transactions = Total number of fraud transactions 
+ - Average Fraud Amount =  Average value of fraud transactions 
+ - Transaction Velocity = Rapid transaction frequency by user 
+ - Fraud by Hour = Fraud occurrence based on transaction timing 
+ - Fraud by Location = Geographic fraud concentration 
+ - Fraud by Transaction Type = Fraud risk by payment category 
 
 ---
 
 # 🔍 SQL Analysis 
 
-## ✅ Data Cleaning
+##  Data Cleaning
 - Removed duplicate transactions
 - Handled null values
 - Standardized categorical fields
 - Validated transaction integrity
 
-## ✅ Data Transformation
+##  Data Transformation
 - Extracted hourly transaction features
 - Standardized transaction categories
-- Created analytical fraud indicators
 - Generated KPI metrics
 
-## ✅ Advanced Fraud Analytics
+##  Advanced Fraud Analysis
 - Transaction velocity detection
 - High-risk user identification
 - Fraud trend analysis
@@ -107,7 +106,7 @@ Business Insights & Recommendations
 
 Exploratory data analysis focused on identifying fraud behavior patterns and transaction trends.
 
-### Analysis Included:
+### Analysis Includes:
 - Missing value analysis
 - Transaction distribution analysis
 - Fraud vs non-fraud comparison
@@ -124,18 +123,18 @@ The Streamlit dashboard provides an interactive fraud monitoring solution.
 
 ## Dashboard Components
 
-### ✅ KPI Cards
+###  KPI Cards
 - Fraud Rate
 - Fraud Amount
 - Fraud Transactions
 - Average Fraud Amount
 
-### ✅ Interactive Filters
+###  Interactive Filters
 - Date range filter
 - Transaction type filter
 - Location filter
 
-### ✅ Interactive Visualizations
+###  Interactive Visualizations
 - Fraud by Hour
 - Fraud Trend Over Time
 - Fraud by Transaction Type
@@ -143,53 +142,75 @@ The Streamlit dashboard provides an interactive fraud monitoring solution.
 - Transaction Velocity Analysis
 
 ---
+# 📌 Key Business Insights
 
-# 📌 Key Insights
+- Analyzed **50,000+ banking transactions** using PostgreSQL and Python to identify fraud patterns and operational risk indicators.
 
-### 🔹 Fraud Activity Peaks During Night Hours
-Fraudulent transactions are significantly higher during late-night and early-morning hours, indicating reduced operational monitoring during these periods.
+- Identified **16,067 fraudulent transactions**, resulting in an overall fraud rate of **32.13%**.
 
-### 🔹 High Transaction Velocity Indicates Suspicious Behavior
-Users performing multiple transactions within short time intervals showed increased fraud probability, making transaction velocity a strong fraud indicator.
+- Total fraud exposure reached approximately **₹1.60 Million** in suspicious transaction value.
 
-### 🔹 High-Value Transactions Carry Higher Fraud Risk
-Fraudulent transactions tend to involve larger transaction amounts compared to normal transactions, increasing financial exposure.
+- **ATM Withdrawals** recorded the highest fraud rate at **32.49%**, making them the most vulnerable transaction category.
 
-### 🔹 Certain Locations Contribute Majority of Fraud Cases
-Fraud distribution analysis identified specific high-risk locations responsible for a disproportionate share of fraudulent activity.
+- Fraud activity showed strong geographic concentration, with:
+  - Tokyo contributing **20.63%**
+  - New York contributing **20.05%**
+  - Sydney contributing **19.88%** of total fraud cases.
 
-### 🔹 Fraud Concentration Follows Pareto Principle
-A small percentage of users and locations contribute to the majority of fraud cases, enabling targeted fraud monitoring strategies.
+- Peak fraud activity occurred during **11 AM**, recording over **700+ fraudulent transactions**.
 
-### 🔹 Transaction Type Impacts Fraud Probability
-Some transaction categories demonstrate higher fraud rates than others, highlighting vulnerabilities in specific payment methods.
+- Nearly **24% of total fraud cases** occurred during late-night operational hours, indicating elevated fraud risk during low-monitoring periods.
 
-### 🔹 Fraud Trends Fluctuate Over Time
-Daily fraud monitoring showed periodic spikes in suspicious activity, emphasizing the importance of continuous fraud surveillance systems.
+- Transaction velocity analysis revealed that users performing unusually high transaction frequencies within short time windows demonstrated significantly higher fraud probability.
 
+- High-value transactions showed elevated fraud exposure, indicating fraudsters primarily target larger financial transactions.
+
+- Fraud behavior followed a Pareto-style distribution where a limited number of users and locations contributed disproportionately to total fraud activity.
+
+---
+
+# 💡 Business Recommendations
+
+- Implement real-time fraud monitoring systems to continuously track suspicious transaction activity across banking channels.
+
+- Strengthen authentication controls for high-risk transaction categories such as ATM Withdrawals and Online Transactions.
+
+- Deploy transaction velocity-based fraud detection rules to identify users performing abnormal transaction frequencies within short time periods.
+
+- Increase fraud monitoring sensitivity during high-risk operational hours, particularly late-night transaction periods.
+
+- Introduce region-specific fraud surveillance mechanisms for high-risk locations including Tokyo, New York, and Sydney.
+
+- Apply stricter verification processes for high-value transactions to reduce financial fraud exposure.
+
+- Establish centralized KPI monitoring for:
+  - Fraud Rate
+  - Fraud Amount
+  - Transaction Velocity
+  - High-Risk Users
+  - High-Risk Locations
+
+- Develop scalable cloud-based fraud analytics infrastructure for real-time enterprise fraud monitoring and operational intelligence.
 ---
 
 # 💼 Business Impact
 
-### ✅ Improved Fraud Visibility
+###  Improved Fraud Visibility
 The dashboard enables centralized fraud monitoring through real-time KPI tracking and interactive analytics.
 
-### ✅ Faster Fraud Detection
+###  Faster Fraud Detection
 Transaction velocity analysis and time-based fraud monitoring help identify suspicious activity earlier, reducing response time.
 
-### ✅ Reduced Financial Losses
+###  Reduced Financial Losses
 Identifying high-risk transactions and locations supports proactive fraud prevention and minimizes monetary exposure.
 
-### ✅ Better Decision-Making
+###  Better Decision-Making
 Business stakeholders can use fraud trends, KPIs, and analytical insights to improve fraud control strategies.
 
-### ✅ Enhanced Risk Monitoring
+###  Enhanced Risk Monitoring
 The solution helps monitor high-risk users, transaction types, and geographic regions more effectively.
 
-### ✅ Operational Efficiency
-Automated fraud analytics reduce manual investigation efforts and improve fraud investigation prioritization.
-
-### ✅ Scalable Fraud Analytics Framework
+###  Scalable Fraud Analytics Framework
 The architecture supports future enhancements such as:
 - Machine learning fraud prediction
 - Real-time fraud alerts
@@ -246,7 +267,7 @@ fraud-detection-dashboard/
 ## Step 1: Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r Requirements.txt
 ```
 
 ---
@@ -254,7 +275,7 @@ pip install -r requirements.txt
 ## Step 2: Run Streamlit Dashboard
 
 ```bash
-streamlit run app.py
+streamlit run fraud_dashboard.py
 ```
 
 ---
@@ -277,7 +298,7 @@ This project demonstrates a complete end-to-end fraud analytics workflow using P
 
 Koushik Das
 
-Aspiring Data Analyst | SQL | Python | PostgreSQL | Streamlit
+Data Analyst | SQL | Python | PostgreSQL | Streamlit
 
 ---
 

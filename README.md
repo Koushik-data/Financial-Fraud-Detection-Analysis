@@ -291,7 +291,12 @@ This project demonstrates a complete end-to-end fraud analytics workflow using P
 Koushik Das
 
 Data Analyst | SQL | Python | PostgreSQL | Streamlit
+# 📞 Contact
 
+- 📧 Email: datawithkoushik@gmail.com
+- 📱 Phone: +91 6290610739
+- 💼 LinkedIn: https://www.linkedin.com/in/koushik-das-71a2a8220/
+- 🌐 GitHub: https://github.com/Koushik-data
 ---
 
 # 🔗 Future Enhancements

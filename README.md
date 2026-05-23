@@ -230,34 +230,26 @@ Add dashboard screenshots inside:
 # 📂 Project Structure
 
 ```text
-fraud-detection-dashboard/
-│
-├── app.py
-├── requirements.txt
+dashboard/
+   ├── fraud_dashboard.py
 ├── README.md
 ├── .gitignore
 │
 ├── dataset/
-│   └── fraud_clean.csv
+│   └── synthetic_fraud_dataset.csv
 │
-├── sql/
-│   ├── schema.sql
-│   ├── cleaning.sql
-│   ├── kpi_queries.sql
-│   └── advanced_queries.sql
+├── data clean & transform/
+│   ├── fraud_clean.sql
 │
-├── notebooks/
-│   └── fraud_eda.ipynb
+├── EDA/
+│   └──financial fraud EDA.ipynb
 │
-├── screenshots/
-│
-├── docs/
-│   ├── business_problem.md
-│   ├── kpis.md
-│   ├── insights.md
-│   └── recommendations.md
-│
-└── assets/
+├── images/
+│    
+├── documents/
+   ├── Requirements.txt
+   ├── insights.md
+   └── recommendations.md
 ```
 
 ---

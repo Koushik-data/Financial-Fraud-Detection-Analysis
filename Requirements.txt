@@ -1,8 +1,0 @@
-streamlit
-pandas
-plotly
-sqlalchemy
-psycopg2-binary
-numpy
-matplotlib
-jupyter
